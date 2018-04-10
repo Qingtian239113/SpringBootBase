@@ -9,8 +9,7 @@
  项目结构：
  -  libs：存放jar文件
  - src/main
-    - java
-      - com.kepai
+   - java.com.kepai
         - app 项目代码
           - action 接口层
           - annotation 自定义注解层
@@ -49,5 +48,5 @@
           - HttpResult 统一接口返回对象
           - ResultException 统一抛出异常
         - third 第三方框架
-    - resource 资源存放
+   - resource 资源存放
     

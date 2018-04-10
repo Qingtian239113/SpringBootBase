@@ -13,8 +13,9 @@ public class HttpResult<T> {
 
     private int code;
     private String message;
-    private int count;
     private T data;
+    private int total;
+    private int pageNo;
 
     /**
      * 请求成功
@@ -43,7 +44,7 @@ public class HttpResult<T> {
         result.code = 200;
         result.message = "请求成功";
         result.data = data;
-        result.count = count;
+        result.total = count;
         return result;
     }
 
@@ -114,6 +115,11 @@ public class HttpResult<T> {
         return result;
     }
 
+
+    ///////////////////////////////////////////////////////////////////////////
+    // setter,getter
+    ///////////////////////////////////////////////////////////////////////////
+
     public int getCode() {
         return code;
     }
@@ -138,11 +144,19 @@ public class HttpResult<T> {
         this.data = data;
     }
 
-    public int getCount() {
-        return count;
+    public int getTotal() {
+        return total;
     }
 
-    public void setCount(int count) {
-        this.count = count;
+    public void setTotal(int total) {
+        this.total = total;
+    }
+
+    public int getPageNo() {
+        return pageNo;
+    }
+
+    public void setPageNo(int pageNo) {
+        this.pageNo = pageNo;
     }
 }

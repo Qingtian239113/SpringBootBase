@@ -1,6 +1,5 @@
 package com.kepai.app.action;
 
-import com.kepai.app.pojos.table.UserTable;
 import com.kepai.app.service.UserService;
 import com.kepai.base.HttpResult;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,11 +22,8 @@ public class InitAction extends AppAction {
     UserService userService;
 
     @RequestMapping("")
-    public HttpResult<UserTable> empty() {
-
-        UserTable userTable = userService.selectById(1);
-
-        return HttpResult.respOK(userTable);
+    public HttpResult<String> empty() {
+        return HttpResult.respOK("");
     }
 
 

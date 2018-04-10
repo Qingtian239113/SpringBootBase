@@ -9,5 +9,5 @@ package com.kepai.third;
  * @note 这里写文件的详细功能和改动
  * @note
  */
-final public class ThirdHepler {
+final public class ThirdHelper {
 }
